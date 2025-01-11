@@ -1,0 +1,26 @@
+.container{
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+}
+.avatar{
+    height: 75px;
+    width: 65px;
+}
+.name{
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 13px 0;
+}
+.status{
+    font-family: sans-serif;
+    font-size: 18px; 
+    margin: 5px 0;
+}
+.online{
+    color: green;
+}
+.offline{
+    color: red;
+}
+  

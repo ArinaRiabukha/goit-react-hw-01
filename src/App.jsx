@@ -1,11 +1,17 @@
 import React from "react";
-import Profile from "./components/profile";
+
 import userData from "./userData.json";
+import friends from "./friends.json";
+import transactions from "./transactions.json"
+
+import Profile from "./components/Profile/profile";
+import FriendList from "./components/FriendList/friendList";
+import TransactionHistory from "./components/TransactionHistory/transactionHistory"
+
 
 const App = () => {
-  console.log(userData);
   return (
-    <div>
+    <>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -13,7 +19,9 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-    </div>
+      <FriendList friends={friends}/>
+      <TransactionHistory items={transactions} />
+    </>
   );
 };
 
